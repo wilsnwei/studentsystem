@@ -24,7 +24,7 @@ export default function Student() {
         useEffect(() => {
             fetch("http://localhost:8080/student/getAll")
             .then(res => res.json())
-            .then((result) => {setStudents(result)})
+            .then((res) => {setStudents(res)})
         }, [])
     
   return (
